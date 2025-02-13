@@ -24,8 +24,6 @@ a {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 100vh;
-	margin: 0;
 	flex-direction: column;
 }
 .loginForm {
@@ -119,7 +117,6 @@ label {
 }
 /*<============================================================>*/
 /*<========Media queries for other displays and devices========>*/
-
 @media only screen and (max-width: 480px) {
 	header h1 {
 		font-size: 4em;
