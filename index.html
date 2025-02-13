@@ -12,14 +12,17 @@
 				<h1><a href="login.html">SIGP</a></h1>
 				<p>Sistema integrado de gestión de prestamos</p>
 			</header>
-			<div class="loginForm">
-				<form method="POST" action="#">
-					<input id="username" class="loginForm__input--username" type="text" name="Cedula" value="Username" autocomplete="off"><br>
-					<input id="password" class="loginForm__input--password" type="password" name="Contraseña" value="Contraseña" autocomplete="off"><br>
+			<div class="loginFormContainer">
+				<form method="POST" action="#" id="loginForm">
+					<input id="username" class="loginForm__input--username" type="text" name="Cedula" value="Username" autocomplete="off" required><br>
+					<input id="password" class="loginForm__input--password" type="password" name="Contraseña" value="Contraseña" autocomplete="off" required><br>
 					
 					<input id="remember" class="loginForm__input--remember" type="checkbox" name="Vehicle" value="remember">
 					<label for="remember">Recordar usuario</label>
-					<input id="submit" class="loginForm__input--submit" type="submit" name="submit" value="Entrar">
+					<button class="loginForm__button--submit" type="submit">
+						<a href="home.html">Entrar</a>
+					</button>
+					
 				</form>
 				<a class="recovery" href="#">Forgot Password&#63;</a>
 			</div>

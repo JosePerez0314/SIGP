@@ -26,7 +26,7 @@ a {
 	align-items: center;
 	flex-direction: column;
 }
-.loginForm {
+.loginFormContainer {
 	margin: 1em auto 0 auto;
 	width: 22.8em;
 	height: 25em;
@@ -56,7 +56,7 @@ header p {
 }
 
 input {
-	background: rgba(228,232,243, 0.8) url("../images/sprite.png") no-repeat;
+	background: rgba(228,232,243, 0.8) url("../img/sprite.png") no-repeat;
 	background-size: 20px 80px;
 	background-position: 0.5em 0.6em;
 	border: none;
@@ -94,23 +94,42 @@ label {
 .recovery:hover {
 	text-decoration: underline;
 }
-.loginForm__input--submit {
-	background: rgba(35,35,35, 0.6);
-	color: rgba(220,220,220,1);
-	padding: 0 0 0 0;
-	margin: 2.5em 0 0 7em;
-	width: 10em;
-	text-transform: uppercase;
-	cursor: pointer;
-	-webkit-transition: background 0.4s;
-	transition: background 0.4s;
+/* Estilos del botón */
+.loginForm__button--submit {
+    background: rgba(35, 35, 35, 0.6);
+    padding: 0;
+    margin: 2.5em auto 0 auto; /* Centrado automático */
+    width: 10em;
+    height: 2.8em; /* Agregado para altura consistente */
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    display: flex; /* Agregado para que el botón tome el tamaño del contenido */
+    align-items: end; /* Centra el contenido verticalmente */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    -webkit-transition: background 0.4s;
+    transition: background 0.4s;
 }
-.loginForm__input--submit:hover {
-	background: rgba(223,32,77, 0.8);
+
+/* Estilo del enlace dentro del botón */
+.loginForm__button--submit a {
+    display: block; /* Asegura que ocupe todo el botón */
+    width: 100%;
+    height: 100%;
+    color: rgba(220, 220, 220, 1);
+    text-decoration: none;
+    text-align: center;
+    line-height: 2.8em; /* Ajusta alineación vertical */
 }
-.loginForm__input--submit:focus {
-	background: rgba(223,32,77, 0.8);
+
+/* Hover y Focus */
+.loginForm__button--submit:hover,
+.loginForm__button--submit:focus {
+    background: rgba(223, 32, 77, 0.8);
 }
+
+
+
 
 .loginForm a{
 	margin-top: -6.1em;
