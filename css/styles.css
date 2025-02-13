@@ -21,6 +21,12 @@ a {
 /*<========Top to Bottom ordered CSS rules========>*/
 .container {
 	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 0;
+	flex-direction: column;
 }
 .loginForm {
 	margin: 1em auto 0 auto;
@@ -113,6 +119,7 @@ label {
 }
 /*<============================================================>*/
 /*<========Media queries for other displays and devices========>*/
+
 @media only screen and (max-width: 480px) {
 	header h1 {
 		font-size: 4em;

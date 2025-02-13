@@ -1,0 +1,53 @@
+body {
+    font-family: sans-serif;
+    background-color: #fcfcfc;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+/* Estilos por defecto */
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fcfcfc;
+}
+
+button {
+    background: none;
+    border: none;
+    color: #fcfcfc;
+}
+
+/* Estilos del encabezado */
+
+header {
+    background-color: #0b3b69;
+    color: #fcfcfc;
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.header__logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header__button {
+    background: none;
+    border: none;
+    background-image: url('img/boton.png');
+}
+
+img {
+    width: 30px;
+}
