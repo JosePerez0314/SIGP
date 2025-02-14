@@ -1,4 +1,3 @@
-
 function mainFunction() {
 	var user = document.getElementById("username");
 	var pass = document.getElementById("password");

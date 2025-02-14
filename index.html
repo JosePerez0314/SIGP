@@ -1,33 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0">
-		<title>MyPage Login</title>
-		<link rel="stylesheet" type="text/css" href="css/styles.css">
-	</head>
-	<body>
-		<div class="container">
-			<header>
-				<h1><a href="login.html">SIGP</a></h1>
-				<p>Sistema integrado de gestión de prestamos</p>
-			</header>
-			<div class="loginFormContainer">
-				<form method="POST" action="#" id="loginForm">
-					<input id="username" class="loginForm__input--username" type="text" name="Cedula" value="Username" autocomplete="off" required><br>
-					<input id="password" class="loginForm__input--password" type="password" name="Contraseña" value="Contraseña" autocomplete="off" required><br>
-					
-					<input id="remember" class="loginForm__input--remember" type="checkbox" name="Vehicle" value="remember">
-					<label for="remember">Recordar usuario</label>
-					<button class="loginForm__button--submit" type="submit">
-						<a href="home.html">Entrar</a>
-					</button>
-					
-				</form>
-				<a class="recovery" href="#">Forgot Password&#63;</a>
-			</div>
-			
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0">
+	<title>MyPage Login</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+	<div class="container">
+		<header>
+			<h1><a href="login.html">SIGP</a></h1>
+			<p>Sistema integrado de gestión de prestamos</p>
+		</header>
+		<div class="loginFormContainer">
+			<form method="POST" action="#" id="loginForm">
+				<input id="username" class="loginForm__input--username" type="text" name="Cedula" value="Username"
+					autocomplete="off" required><br>
+				<input id="password" class="loginForm__input--password" type="password" name="Contraseña"
+					value="Contraseña" autocomplete="off" required><br>
+				<input id="remember" class="loginForm__input--remember" type="checkbox" name="Vehicle" value="remember">
+				<label for="remember">Recordar usuario</label>
+				<button class="loginForm__button--submit" type="submit">
+					<a href="home.html">Entrar</a>
+				</button>
+
+			</form>
+			<a class="recovery" href="#">Forgot Password&#63;</a>
 		</div>
-		<script type="text/javascript" src="app/app.js"></script>
-	</body>
+
+	</div>
+	<script type="text/javascript" src="app/app.js"></script>
+</body>
+
 </html>
