@@ -36,16 +36,13 @@ header {
     height: 6em;
     width: 100%;
     display: flex;
-    justify-content:space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
 .header__button {
     cursor: pointer;
-    position: absolute;
-    top: 30px;
-    left: 0;
-    margin-left: 20px;
+    margin: 0 20px;
 }
 
 .header__logo-container {
@@ -68,13 +65,69 @@ header {
     font-size: 2.7em;
 }
 
-.header span {
-    font-size: 10px;
+.header p {
+    margin-right: 25px;
 }
 
-.header__button {
-    background: none;
-    border: none;
-    background-image: url('img/boton.png');
+/* Navegación */
+
+.nav {
+    background-color: #14497b;
+    height: 90vh;
+    position: absolute;
+    left: 0;
 }
 
+.nav__ul {
+    position: relative;
+    top: -30px;
+    left: -30px;
+}
+
+.nav__li {
+    padding-top: 30px;
+}
+
+.nav__li button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+}
+
+.nav__li button img {
+    height: auto;
+}
+
+
+.nav__li ul {
+    padding-top: 5px;
+}
+
+.nav__li ul li {
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.nav__li ul li:hover {
+    color: red;
+}
+
+.nav__li ul li a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.nav__li ul li img {
+    width: 20px;
+    height: auto;
+}
+
+/* Versión Mobile */
+
+@media only screen and (max-width: 768px) {
+    .header p {
+        display: none;
+    }
+}
