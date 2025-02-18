@@ -5,6 +5,15 @@ body {
     margin: 0;
     padding: 0;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Estilos por defecto */
@@ -71,17 +80,32 @@ header {
 
 /* Navegación */
 
-.nav {
-    background-color: #14497b;
-    height: 90vh;
-    position: absolute;
-    left: 0;
+.nav-main-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
 }
 
+.nav {
+    background-color: #14497b;
+    min-height: 90vh;
+    width: 50vh;
+    transition: visibility 0.3s, transform 0.3s ease-in-out;
+ /*    transform: translatex(-100%); */
+}
+
+/* Para JAVASCRIPT */
+nav.mostrar {
+    visibility: visible;
+    transform: translatex(0);
+}
+
+/* =========================== */
+
 .nav__ul {
-    position: relative;
-    top: -30px;
-    left: -30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .nav__li {
@@ -93,12 +117,12 @@ header {
     align-items: center;
     gap: 8px;
     padding: 8px 12px;
+    cursor: pointer;
 }
 
 .nav__li button img {
     height: auto;
 }
-
 
 .nav__li ul {
     padding-top: 5px;
@@ -122,12 +146,65 @@ header {
 .nav__li ul li img {
     width: 20px;
     height: auto;
+    color: #fcfcfc;
 }
+
+/* Contenido principal */
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Pie de pagina */
+
+footer {
+    width: 100%;
+    background-color: #f0f0f3;
+}
+
+footer p {
+    font-size: .7em;
+    padding-left: 10px;
+    color: #808080;
+}
+
 
 /* Versión Mobile */
 
 @media only screen and (max-width: 768px) {
+
+    /* Encabezado */
     .header p {
         display: none;
+    }
+
+    /* Navegación */
+    .nav {
+        /* transform: translatey(-120%); */
+        transform: translatey(0);
+        width: 100%;
+    }
+
+    .nav__ul {
+        font-size: 1.6em;
+    }
+
+    .nav__li button {
+        font-size: 2em;
+    }
+
+    /* Contenido principal */
+    .main-content {
+      margin-left: -6.5em;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .main-content {
+        margin-left: -9em;
     }
 }
