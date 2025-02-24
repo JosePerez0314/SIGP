@@ -1,0 +1,105 @@
+/****************************************** 
+ * prestamos.css 
+ ******************************************/
+
+/* 
+   1. Ajustes generales para la sección de préstamos.
+   - Usamos un <section> con un id específico para no chocar con 
+     los estilos generales de home.css.
+   - Añadimos un margin-top o padding-top para separarlo del nav 
+     si éste es fijo o si se superpone.
+*/
+#prestamos-section {
+    /* Ajusta según la altura de tu nav si es fijo */
+    margin-top: 80px; 
+    /* Si no es fijo, podrías usar un margin-top menor o incluso 0 */
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    /* Si quieres que el fondo sea diferente al azul (#0b3b69) de home.css, 
+       puedes poner un color claro o blanco aquí */
+    background-color: #f0f0f3;
+}
+
+/* 
+   2. Hero (encabezado de la sección de préstamos).
+   - Se quita position: absolute para que no se sobreponga con el nav.
+   - Se le puede dar un fondo distinto si deseas.
+*/
+.hero {
+    /* background-color: #f0f0f3;  // ya lo maneja #prestamos-section 
+       si prefieres un fondo distinto, descomenta esta línea */
+    color: #0c0c0c;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px; /* Espacio debajo del hero antes del formulario */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.hero h2 {
+    font-size: 2em;
+    margin: 0; 
+    /* Ajusta si quieres más separación */
+}
+
+/* 
+   3. Contenedor del formulario (Calculadora de préstamo).
+   - Ajustamos ancho, centrado y borde.
+*/
+.loan-calculator {
+    border: 1px solid #ccc;
+    background-color: #fff; 
+    padding: 20px;
+    margin: 0 auto;
+    width: 80%; 
+    max-width: 800px; /* Ajusta si quieres un ancho máximo */
+    box-sizing: border-box;
+}
+
+/* 
+   4. Grupos de inputs (capital, tasa, cuotas, etc.).
+   - Se alinean las etiquetas e inputs en la misma fila.
+*/
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.input-group label {
+    width: 40%;
+    text-align: left;
+}
+
+.input-group input,
+.input-group select {
+    width: 60%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* 
+   5. Tabla de amortización.
+   - Estructura básica para mostrar datos de manera tabular.
+*/
+.amortization-table {
+    margin-top: 20px;
+}
+
+.amortization-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.amortization-table th,
+.amortization-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+.amortization-table th {
+    background-color: #f0f0f0;
+}

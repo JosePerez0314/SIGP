@@ -13,82 +13,156 @@
 <body>
     <div class="container">
 
-        <!-- Encabezado -->
-
         <header class="header">
-
-            <!-- logo -->
-            <!-- Contenedor del logo -->
             <div class="header__logo-container">
                 <div class="header__logo">
-                    <!-- Boton hamburguesa -->
-                    <button class="header__button" id="ham"><img src="icons/bars-solid.svg"
-                            alt="Boton del menu"></button>
-
+                    <button class="header__button" id="ham">
+                        <img src="icons/bars-solid.svg" alt="Boton del menu">
+                    </button>
                     <img src="img/logo.png" alt="logo">
                     <a href="#">SIGP</a>
                 </div>
             </div>
-
-
-            <!-- Bienvenida al usuario -->
             <p class="welcome">Bienvenido 402-4355044-2 a M & C INVERSIONES SRL</p>
-
         </header>
-
-        <!-- Navegación -->
 
         <div class="nav-main-container">
             <nav class="nav">
                 <ul class="nav__ul">
-                    <li class="nav__li"> <!-- Herramientas -->
-                        <button class="nav__li-button"> <img src="icons/screwdriver-wrench-solid.svg" alt="Herramientas"
-                                class="icon">
+                    <li class="nav__li">
+                        <button class="nav__li-button">
+                            <img src="icons/screwdriver-wrench-solid.svg" alt="Herramientas" class="icon">
                             Herramientas <span class="arrow" id="arrow-1"></span>
                         </button>
                         <ul>
-                            <li><a href="cotizar-prestamo.html"><img src="icons/calculator-solid.svg"
-                                        alt="Cotizar prestamo" class="icon">Cotizar
-                                    Prestamo</a></li>
-                            <li><a href="#"><img src="icons/medal-solid.svg" alt="Consultar garantia"
-                                        class="icon">Consultar Garantía</a>
-                            </li>
-                            <li><a href="#"><img src="icons/book-solid.svg" alt="Resumen ejecutivo" class="icon">Resumen
-                                    Ejecutivo</a>
-                            </li>
-                            <li><a href="#"><img src="icons/credit-card-solid.svg" alt="Solicitud de credito"
-                                        class="icon">Solicitud de
-                                    Credito</a>
-                            </li>
+                            <li><a href="cotizar-prestamo.html">
+                                    <img src="icons/calculator-solid.svg" alt="Cotizar prestamo" class="icon">
+                                    Cotizar Prestamo
+                                </a></li>
+                            <li><a href="#">
+                                    <img src="icons/medal-solid.svg" alt="Consultar garantia" class="icon">
+                                    Consultar Garantía
+                                </a></li>
+                            <li><a href="#">
+                                    <img src="icons/book-solid.svg" alt="Resumen ejecutivo" class="icon">
+                                    Resumen Ejecutivo
+                                </a></li>
+                            <li><a href="#">
+                                    <img src="icons/credit-card-solid.svg" alt="Solicitud de credito" class="icon">
+                                    Solicitud de Credito
+                                </a></li>
                         </ul>
                     </li>
-                    <li class="nav__li"> <!-- Cobros -->
-                        <button class="nav__li-button"> <img src="icons/money-bill-solid.svg" alt="Cobros" class="icon">
+                    <li class="nav__li">
+                        <button class="nav__li-button">
+                            <img src="icons/money-bill-solid.svg" alt="Cobros" class="icon">
                             Cobros <span class="arrow" id="arrow-2"></span>
                         </button>
                         <ul>
-                            <li><a href="#"><img src="icons/folder-solid.svg" alt="Abrir contrato" class="icon">Abrir
-                                    Contrato</a></li>
-                            <li><a href="#"><img src="icons/calculator-solid.svg" alt="Cuadre caja" class="icon">Cuadre
-                                    Caja</a></li>
-                            <li><a href="#"><img src="icons/key-solid.svg" alt="Asignación de llaves"
-                                        class="icon">Asignación de Llaves</a></li>
-                            <li><a href="#"><img src="icons/folder-solid.svg" alt="Clientes activos"
-                                        class="icon">Clientes Activos</a>
-                            </li>
+                            <li><a href="#">
+                                    <img src="icons/folder-solid.svg" alt="Abrir contrato" class="icon">
+                                    Abrir Contrato
+                                </a></li>
+                            <li><a href="#">
+                                    <img src="icons/calculator-solid.svg" alt="Cuadre caja" class="icon">
+                                    Cuadre Caja
+                                </a></li>
+                            <li><a href="#">
+                                    <img src="icons/key-solid.svg" alt="Asignación de llaves" class="icon">
+                                    Asignación de Llaves
+                                </a></li>
+                            <li><a href="#">
+                                    <img src="icons/folder-solid.svg" alt="Clientes activos" class="icon">
+                                    Clientes Activos
+                                </a></li>
                         </ul>
                     </li>
                 </ul>
             </nav>
 
-            <!-- Default -->
             <main>
-                <div class="main-content">
-                    <h1>Default</h1>
-                </div>
+                <section class="hero">
+                    <h2>Herramientas / Cotizar Préstamo</h2>
+                </section>
+
+                <section class="loan-calculator">
+                    <div class="calculator-box">
+                        <h3>Cotizar Préstamo</h3>
+                        <div class="input-group">
+                            <label for="branch">Sucursal:</label>
+                            <select id="branch">
+                                <option value="carneana">Carretera Mella</option>
+                                </select>
+                        </div>
+                        <div class="input-group">
+                            <label for="capital">Capital:</label>
+                            <input type="number" id="capital">
+                        </div>
+                        <div class="input-group">
+                            <label for="closing-cost">Gasto por cierre:</label>
+                            <input type="number" id="closing-cost">
+                        </div>
+                        <div class="input-group">
+                            <label for="frequency">Frecuencia:</label>
+                            <select id="frequency">
+                                <option value="mensual">Mensual</option>
+                                </select>
+                        </div>
+                        <div class="input-group">
+                            <label for="rate">Tasa:</label>
+                            <input type="number" id="rate">
+                        </div>
+                        <div class="input-group">
+                            <label for="installments">Cuotas:</label>
+                            <input type="number" id="installments">
+                        </div>
+                        <div class="input-group">
+                            <label for="insurance">Seguro/Mes:</label>
+                            <input type="number" id="insurance">
+                        </div>
+                        <div class="input-group">
+                            <label for="divide-insurance">Dividir en:</label>
+                            <input type="number" id="divide-insurance">
+                        </div>
+                        <div class="input-group">
+                            <label for="gps">Gps/Mes:</label>
+                            <input type="number" id="gps">
+                        </div>
+                        <div class="input-group">
+                            <label for="divide-gps">Dividir en:</label>
+                            <input type="number" id="divide-gps">
+                        </div>
+
+                        <button id="calculate">Calcular</button>
+
+                        <div class="amortization-table">
+                            <h3>Tabla de amortización</h3>
+                            <label for="amortization-type">Tipo de Amortización:</label>
+                            <select id="amortization-type">
+                                <option value="absolute">Amortización absoluta</option>
+                                </select>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>No.</th>
+                                        <th>Vence en</th>
+                                        <th>Cuota</th>
+                                        <th>Cierre</th>
+                                        <th>Seguro</th>
+                                        <th>GPS</th>
+                                        <th>Capital</th>
+                                        <th>Interés</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
             </main>
         </div>
-        <!-- Pie de pagina -->
+
         <footer>
             <p>Copyright © 2019 JDC INVERSIONES SRL. Todos los derechos reservados</p>
         </footer>
