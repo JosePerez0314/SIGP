@@ -11,7 +11,7 @@
 */
 #prestamos-section {
     /* Ajusta según la altura de tu nav si es fijo */
-    margin-top: 80px; 
+    margin-top: 80px;
     /* Si no es fijo, podrías usar un margin-top menor o incluso 0 */
     padding: 20px;
     width: 100%;
@@ -27,21 +27,35 @@
    - Se le puede dar un fondo distinto si deseas.
 */
 .hero {
-    /* background-color: #f0f0f3;  // ya lo maneja #prestamos-section 
-       si prefieres un fondo distinto, descomenta esta línea */
+    background-color: #f0f0f3;
     color: #0c0c0c;
     text-align: center;
     padding: 20px;
-    margin-bottom: 20px; /* Espacio debajo del hero antes del formulario */
+    margin-bottom: 20px;
+    /* Espacio debajo del hero antes del formulario */
     width: 100%;
     box-sizing: border-box;
 }
 
 .hero h2 {
     font-size: 2em;
-    margin: 0; 
+    margin: 0;
+    font-weight: 100;
     /* Ajusta si quieres más separación */
 }
+
+.hero h2 span {
+    color: #808080;
+}
+
+/* =========================== */
+
+main {
+    margin-bottom: 3em;
+}
+
+/* =========================== */
+
 
 /* 
    3. Contenedor del formulario (Calculadora de préstamo).
@@ -49,12 +63,14 @@
 */
 .loan-calculator {
     border: 1px solid #ccc;
-    background-color: #fff; 
+    background-color: #fff;
     padding: 20px;
     margin: 0 auto;
-    width: 80%; 
-    max-width: 800px; /* Ajusta si quieres un ancho máximo */
+    width: 80%;
+    max-width: 800px;
+    /* Ajusta si quieres un ancho máximo */
     box-sizing: border-box;
+    overflow: auto;
 }
 
 /* 
@@ -86,6 +102,10 @@
 */
 .amortization-table {
     margin-top: 20px;
+}
+
+.amortization-type__container {
+    padding-bottom: 2em;
 }
 
 .amortization-table table {
