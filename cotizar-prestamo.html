@@ -83,6 +83,10 @@
             <main>
                 <section class="hero">
                     <h2><span>Herramientas / </span>Cotizar Préstamo</h2>
+                    <div class="hero__buttons">
+                        <button class="imprimir">Imprimir</button>
+                        <button class="cotizar">Cotizar</button>
+                    </div>
                 </section>
 
                 <section class="loan-calculator">
@@ -92,7 +96,7 @@
                             <label for="branch">Sucursal:</label>
                             <select id="branch">
                                 <option value="carneana">Carretera Mella</option>
-                                </select>
+                            </select>
                         </div>
                         <div class="input-group">
                             <label for="capital">Capital:</label>
@@ -106,7 +110,7 @@
                             <label for="frequency">Frecuencia:</label>
                             <select id="frequency">
                                 <option value="mensual">Mensual</option>
-                                </select>
+                            </select>
                         </div>
                         <div class="input-group">
                             <label for="rate">Tasa:</label>
@@ -157,11 +161,11 @@
                                         <th>Interés</th>
                                     </tr>
                                     <tr>
-                                        
+
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    </tbody>
+                                </tbody>
                             </table>
                         </div>
                     </div>
@@ -169,12 +173,29 @@
             </main>
         </div>
 
-        <footer>
-            <p>Copyright © 2019 JDC INVERSIONES SRL. Todos los derechos reservados</p>
-        </footer>
-    </div>
+        <!-- Modal para mostrar la cotización -->
+        <div id="quote-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-button" id="close-modal">&times;</span>
+                <h2>Resultado de la Cotización</h2>
+                <div id="quote-results"></div>
+            </div>
+        </div>
 
-    <script src="app/home.js"></script>
+
+        <script src="app/home.js"></script>
+</body>
+
+</html>
+
+
+<footer>
+    <p>Copyright © 2019 JDC INVERSIONES SRL. Todos los derechos reservados</p>
+</footer>
+</div>
+
+<script src="app/home.js"></script>
+<script src="app/prestamo.js"></script>
 </body>
 
 </html>
